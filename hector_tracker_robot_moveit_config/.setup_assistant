@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: hector_tracker_description
+    relative_path: urdf/tracker_default.urdf.xacro
+  SRDF:
+    relative_path: config/taurob_tracker.srdf
+  CONFIG:
+    generated_timestamp: 1461591268

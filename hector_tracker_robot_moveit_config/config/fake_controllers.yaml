@@ -1,0 +1,15 @@
+controller_list:
+  - name: fake_arm_group_controller
+    joints:
+      - arm_joint_0
+      - arm_joint_1
+      - arm_joint_2
+      - arm_joint_3
+  - name: fake_arm_with_head_group_controller
+    joints:
+      - arm_joint_0
+      - arm_joint_1
+      - arm_joint_2
+      - arm_joint_3
+      - sensor_head_yaw_joint
+      - sensor_head_pitch_joint
