@@ -14,7 +14,11 @@
   <!-- Load updated joint limits (override information from URDF) -->
   <group ns="$(arg robot_description)_planning">
     <rosparam command="load" file="$(find hector_tracker_robot_moveit_config)/config/joint_limits.yaml"/>
+    <param name="shape_transform_cache_lookup_wait_time" value="0.3"/>
   </group>
+  
+  <param name="/move_group/robot_description_planning/default_robot_padding" value="0.1"/>
+  <param name="/move_group/robot_description_planning/default_robot_scale" value="1.0"/>
 
   <!-- Load default settings for kinematics; these settings are overridden by settings in a node's namespace -->
   <group ns="$(arg robot_description)_kinematics">

@@ -1,0 +1,18 @@
+controller_manager_ns: moveit_simple_controller_manager
+controller_list:
+ - name: /tracker_controllers/arm_traj_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - arm_joint_0
+      - arm_joint_1
+      - arm_joint_2
+      - arm_joint_3
+ - name: /tracker_controllers/sensor_head_traj_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - sensor_head_yaw_joint
+      - sensor_head_pitch_joint
