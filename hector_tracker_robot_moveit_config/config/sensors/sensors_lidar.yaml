@@ -1,0 +1,8 @@
+sensors:
+  - sensor_plugin: occupancy_map_monitor/LidarOctomapUpdater
+    scan_topic: /spin_laser/scan
+    max_range: 6.0
+    point_subsample: 1
+    padding_offset: 0.10
+    padding_scale: 1.0
+    filtered_cloud_topic: filtered_cloud

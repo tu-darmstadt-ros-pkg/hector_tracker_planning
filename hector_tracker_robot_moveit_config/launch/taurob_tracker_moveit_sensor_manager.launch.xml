@@ -1,3 +1,11 @@
 <launch>
-
+  
+  <rosparam command="load" file="$(find hector_tracker_robot_moveit_config)/config/sensors/sensors_lidar.yaml" />
+  <rosparam command="load" file="$(find hector_tracker_robot_moveit_config)/config/sensors/filters_lidar.yaml" />
+  
+  <param name="octomap_frame" type="string" value="world" />
+  <param name="octomap_resolution" type="double" value="0.05" />
+  <param name="max_range" type="double" value="8.0" />
+  
 </launch>
+
