@@ -16,3 +16,9 @@ controller_list:
    joints:
       - sensor_head_yaw_joint
       - sensor_head_pitch_joint
+ - name: /tracker_controllers/gripper_roll_traj_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - arm_joint_4
