@@ -60,14 +60,14 @@
     <disable_collisions link1="arm_link_1" link2="arm_link_2" reason="Adjacent" />
     <disable_collisions link1="arm_link_1" link2="arm_link_3" reason="Never" />
     <disable_collisions link1="arm_link_1" link2="arm_link_4" reason="Never" />
-    <disable_collisions link1="arm_link_1" link2="infrared_frame" reason="Never" />
-    <disable_collisions link1="arm_link_1" link2="openni_link" reason="Never" />
+    <disable_collisions link1="arm_link_1" link2="arm_thermal_frame" reason="Never" />
+    <disable_collisions link1="arm_link_1" link2="arm_rgbd_link" reason="Never" />
     <disable_collisions link1="arm_link_1" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="arm_link_2" link2="arm_link_3" reason="Adjacent" />
     <disable_collisions link1="arm_link_2" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="arm_link_3" link2="arm_link_4" reason="Adjacent" />
-    <disable_collisions link1="arm_link_3" link2="infrared_frame" reason="Never" />
-    <disable_collisions link1="arm_link_3" link2="openni_link" reason="Never" />
+    <disable_collisions link1="arm_link_3" link2="arm_thermal_frame" reason="Never" />
+    <disable_collisions link1="arm_link_3" link2="arm_rgbd_link" reason="Never" />
     <disable_collisions link1="arm_link_3" link2="sensor_head_yaw_link" reason="Adjacent" />
     <disable_collisions link1="arm_link_4" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="chassis_link" link2="spin_lidar_link_hokuyo_laser_frame" reason="Adjacent" />
@@ -75,9 +75,9 @@
     <disable_collisions link1="chassis_link" link2="stab_laser_pitch_link" reason="Never" />
     <disable_collisions link1="chassis_link" link2="stab_laser_roll_link" reason="Adjacent" />
     <disable_collisions link1="chassis_link" link2="structure_addons_link" reason="Adjacent" />
-    <disable_collisions link1="infrared_frame" link2="openni_link" reason="Adjacent" />
-    <disable_collisions link1="infrared_frame" link2="sensor_head_yaw_link" reason="Adjacent" />
-    <disable_collisions link1="openni_link" link2="sensor_head_yaw_link" reason="Adjacent" />
+    <disable_collisions link1="arm_thermal_frame" link2="arm_rgbd_link" reason="Adjacent" />
+    <disable_collisions link1="arm_thermal_frame" link2="sensor_head_yaw_link" reason="Adjacent" />
+    <disable_collisions link1="arm_rgbd_link" link2="sensor_head_yaw_link" reason="Adjacent" />
     <disable_collisions link1="spin_lidar_link_hokuyo_laser_frame" link2="stab_laser_pitch_link" reason="Never" />
     <disable_collisions link1="spin_lidar_link_hokuyo_laser_frame" link2="stab_laser_roll_link" reason="Adjacent" />
     <disable_collisions link1="spin_lidar_link_hokuyo_laser_frame" link2="structure_addons_link" reason="Adjacent" />
