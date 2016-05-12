@@ -1,0 +1,59 @@
+# robot parameters
+camera_frame: 'arm_rgbd_cam_rgb_frame'
+
+# simox files
+simox:
+ robot_file: 'taurob_tracker.xml'
+ ws_file: 'taurob_tracker.bin'
+
+# object types parameters
+dial_gauge:
+ max_angle_diff:
+  x_high: 0.471
+  x_low: -0.471
+  y_high: 0.471
+  y_low: -0.175
+ min_dist: 0.4
+ max_dist: 3.5
+ from_back: false
+ joint_group: 'arm_with_head_group'
+hotspot:
+ max_angle_diff:
+  x_high: 0.786
+  x_low: -0.786
+  y_high: 0.786
+  y_low: -0.786
+ min_dist: 0.2
+ max_dist: 10.0
+ from_back: false
+ joint_group: 'arm_with_head_group'
+level_gauge:
+ max_angle_diff:
+  x_high: 0.175
+  x_low: -0.175
+  y_high: 0.349
+  y_low:  0.0
+ min_dist: 0.4
+ max_dist: 3.5
+ from_back: false
+ joint_group: 'arm_with_head_group'
+valve:
+ max_angle_diff:
+  x_high: 0.786
+  x_low: -0.786
+  y_high: 0.786
+  y_low: -0.786
+ min_dist: 0.4
+ max_dist: 3.5
+ from_back: true
+ joint_group: 'arm_with_head_group'
+unknown:
+ max_angle_diff:
+  x_high: 1.571
+  x_low: -1.571
+  y_high: 1.571 
+  y_low: -1.571
+ min_dist: 0.4
+ max_dist: 10.0
+ from_back: true
+ joint_group: 'arm_with_head_group'

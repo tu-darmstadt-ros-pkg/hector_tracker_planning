@@ -24,5 +24,11 @@
   <group ns="$(arg robot_description)_kinematics">
     <rosparam command="load" file="$(find hector_tracker_robot_moveit_config)/config/kinematics.yaml"/>
   </group>
+
+  <!-- Load settings for hector observation planner -->
+  <group ns="combined_planner">
+    <rosparam command="load" file="$(find hector_tracker_robot_moveit_config)/config/argo_move_group.yaml" />
+    <param name="simox/data_path" value="$(find hector_simox_ros)/../tracker" />
+  </group>
   
 </launch>
