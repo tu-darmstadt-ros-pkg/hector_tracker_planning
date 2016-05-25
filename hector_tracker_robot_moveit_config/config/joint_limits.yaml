@@ -22,6 +22,31 @@ joint_limits:
     max_velocity: 1.91986217719
     has_acceleration_limits: false
     max_acceleration: 0
+  arm_joint_4:
+    has_velocity_limits: true
+    max_velocity: 1.91986217719
+    has_acceleration_limits: false
+    max_acceleration: 0
+  gripper_joint_0:
+    has_velocity_limits: true
+    max_velocity: 1.91986217719
+    has_acceleration_limits: false
+    max_acceleration: 0
+  gripper_joint_0_1:
+    has_velocity_limits: true
+    max_velocity: 1.91986217719
+    has_acceleration_limits: false
+    max_acceleration: 0
+  gripper_joint_1:
+    has_velocity_limits: true
+    max_velocity: 1.91986217719
+    has_acceleration_limits: false
+    max_acceleration: 0
+  gripper_joint_1_1:
+    has_velocity_limits: true
+    max_velocity: 1.91986217719
+    has_acceleration_limits: false
+    max_acceleration: 0
   sensor_head_pitch_joint:
     has_velocity_limits: true
     max_velocity: 100
