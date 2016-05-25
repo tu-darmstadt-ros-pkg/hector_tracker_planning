@@ -30,6 +30,14 @@
         <joint name="arm_joint_3" />
         <joint name="arm_joint_4" />
     </group>
+    <group name="gripper_group">
+        <!--<link name="arm_link_4" />-->
+        <link name="gripper_link_1" />
+        <link name="gripper_link_2" />
+        <link name="gripper_link_1_1" />
+        <link name="gripper_link_2_1" />
+    </group>
+    
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
     <group_state name="compact_drive_pose" group="arm_with_gripper_group">
         <joint name="arm_joint_0" value="0" />
@@ -44,6 +52,8 @@
         <joint name="arm_joint_2" value="1.2354" />
         <joint name="arm_joint_3" value="-0.4589" />
     </group_state>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="gripper_eef" parent_link="arm_link_4" group="gripper_group" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="world_virtual_joint" type="floating" parent_frame="world" child_link="base_link" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
