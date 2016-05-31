@@ -22,3 +22,9 @@ controller_list:
    default: true
    joints:
       - arm_joint_4
+ - name: /tracker_controllers/gripper_grasp_traj_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - gripper_joint_0      
