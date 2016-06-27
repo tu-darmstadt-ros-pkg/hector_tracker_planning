@@ -55,7 +55,17 @@ pipes:
   y_low: -0.1
  min_dist: 0.4
  max_dist: 1.0
- from_back: true
+ from_back: false
+ joint_group: 'arm_with_head_group'
+victim:
+ max_angle_diff:
+  x_high: 0.2
+  x_low: -0.2
+  y_high: 0.2
+  y_low: -0.2
+ min_dist: 0.4
+ max_dist: 3.5
+ from_back: false
  joint_group: 'arm_with_head_group'
 unknown:
  max_angle_diff:
