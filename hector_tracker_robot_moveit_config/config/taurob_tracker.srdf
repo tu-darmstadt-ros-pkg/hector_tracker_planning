@@ -49,11 +49,38 @@
         <joint name="arm_joint_3" value="0.25" />
         <joint name="arm_joint_4" value="0.353" />
     </group_state>
+    <group_state name="manipulation_front_pose" group="arm_with_gripper_group">
+        <joint name="arm_joint_0" value="0.0" />
+        <joint name="arm_joint_1" value="1.57" />
+        <joint name="arm_joint_2" value="0.77" />
+        <joint name="arm_joint_3" value="0.37" />
+        <joint name="arm_joint_4" value="0.0" />
+    </group_state>
+    <group_state name="manipulation_left_pose" group="arm_with_gripper_group">
+        <joint name="arm_joint_0" value="1.57" />
+        <joint name="arm_joint_1" value="1.57" />
+        <joint name="arm_joint_2" value="0.77" />
+        <joint name="arm_joint_3" value="0.37" />
+        <joint name="arm_joint_4" value="0.0" />
+    </group_state>
+    <group_state name="manipulation_right_pose" group="arm_with_gripper_group">
+        <joint name="arm_joint_0" value="-1.57" />
+        <joint name="arm_joint_1" value="1.57" />
+        <joint name="arm_joint_2" value="0.77" />
+        <joint name="arm_joint_3" value="0.37" />
+        <joint name="arm_joint_4" value="0.0" />
+    </group_state>
     <group_state name="arm_extended_drive_pose" group="arm_group">
         <joint name="arm_joint_0" value="0" />
         <joint name="arm_joint_1" value="0.8295" />
         <joint name="arm_joint_2" value="1.2354" />
         <joint name="arm_joint_3" value="-0.4589" />
+    </group_state>
+    <group_state name="observation_pose" group="arm_group">
+        <joint name="arm_joint_0" value="0.01" />
+        <joint name="arm_joint_1" value="0.12" />
+        <joint name="arm_joint_2" value="1.69" />
+        <joint name="arm_joint_3" value="-1.58" />
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <!--<end_effector name="gripper_eef" parent_link="arm_link_4" group="gripper_group" />-->
