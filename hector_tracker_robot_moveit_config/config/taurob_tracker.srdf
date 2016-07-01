@@ -89,6 +89,20 @@
         <joint name="arm_joint_3" value="-1.36" />
         <joint name="arm_joint_4" value="0.0" />
     </group_state>
+    <group_state name="look_down_right_pose" group="arm_with_gripper_group">
+        <joint name="arm_joint_0" value="-1.57" />
+        <joint name="arm_joint_1" value="1.35" />
+        <joint name="arm_joint_2" value="1.13" />
+        <joint name="arm_joint_3" value="-1.07" />
+        <joint name="arm_joint_4" value="0.0" />
+    </group_state>
+    <group_state name="look_down_left_pose" group="arm_with_gripper_group">
+        <joint name="arm_joint_0" value="1.57" />
+        <joint name="arm_joint_1" value="1.35" />
+        <joint name="arm_joint_2" value="1.13" />
+        <joint name="arm_joint_3" value="-1.07" />
+        <joint name="arm_joint_4" value="0.0" />
+    </group_state>
     <group_state name="start_check_pose" group="arm_with_gripper_group">
         <joint name="arm_joint_0" value="0" />
         <joint name="arm_joint_1" value="0.45" />
