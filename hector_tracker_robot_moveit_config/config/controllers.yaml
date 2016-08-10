@@ -27,4 +27,10 @@ controller_list:
    type: FollowJointTrajectory
    default: true
    joints:
-      - gripper_joint_0      
+      - gripper_joint_0
+- name: /flipper_control/flipper_traj_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - flipper_joint_1   
