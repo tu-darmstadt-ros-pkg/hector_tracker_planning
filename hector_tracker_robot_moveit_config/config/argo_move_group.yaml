@@ -64,7 +64,7 @@ victim:
   y_high: 0.3
   y_low: -0.3
  min_dist: 0.4
- max_dist: 3.5
+ max_dist: 1.0
  from_back: false
  joint_group: 'arm_with_head_group'
 unknown:
