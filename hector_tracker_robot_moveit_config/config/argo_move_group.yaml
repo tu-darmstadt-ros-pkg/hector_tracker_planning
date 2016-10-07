@@ -1,5 +1,5 @@
 # robot parameters
-camera_frame: 'arm_rgbd_cam_rgb_frame'
+camera_frame: 'arm_rgbd_cam_link'
 
 # simox files
 simox:
