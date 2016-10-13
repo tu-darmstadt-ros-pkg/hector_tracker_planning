@@ -119,6 +119,13 @@
         <joint name="arm_joint_3" value="-0.57" />
         <joint name="arm_joint_4" value="0" />
     </group_state>
+    <group_state name="move_com_forward" group="arm_with_gripper_group">
+        <joint name="arm_joint_0" value="0" />
+        <joint name="arm_joint_1" value="1.76" />
+        <joint name="arm_joint_2" value="0.73" />
+        <joint name="arm_joint_3" value="0" />
+        <joint name="arm_joint_4" value="0" />
+    </group_state>
     <group_state name="flipper_up_max" group="flipper_group">
         <joint name="flipper_joint_1" value="0.8726" />
     </group_state>
