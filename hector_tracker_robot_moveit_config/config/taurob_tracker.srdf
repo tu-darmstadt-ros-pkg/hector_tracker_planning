@@ -135,7 +135,7 @@
         <joint name="flipper_joint_1" value="0.8726" />
     </group_state>
     <group_state name="flipper_up_middle" group="flipper_group">
-        <joint name="flipper_joint_1" value="0.6" />
+        <joint name="flipper_joint_1" value="0.4" />
     </group_state>
     <group_state name="flipper_up_drive" group="flipper_group">
         <joint name="flipper_joint_1" value="0.0883" />
