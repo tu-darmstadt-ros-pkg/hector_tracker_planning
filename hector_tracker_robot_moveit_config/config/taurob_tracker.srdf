@@ -26,7 +26,7 @@
         <joint name="sensor_head_pitch_joint" />
     </group>
     <group name="arm_with_gripper_group">
-        <link name="gripper_cam_link" />
+        <link name="arm_gripper_cam_link" />
         <joint name="arm_joint_0" />
         <joint name="arm_joint_1" />
         <joint name="arm_joint_2" />
