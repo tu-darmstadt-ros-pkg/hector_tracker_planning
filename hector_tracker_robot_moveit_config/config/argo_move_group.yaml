@@ -6,74 +6,87 @@ simox:
  robot_file: 'taurob_tracker.xml'
  ws_file: 'taurob_tracker.bin'
 
-# object types parameters
-dial_gauge:
- max_angle_diff:
-  x_high: 0.471
-  x_low: -0.471
-  y_high: 0.471
-  y_low: -0.175
- min_dist: 0.4
- max_dist: 3.5
- from_back: false
- joint_group: 'arm_with_head_group'
-hotspot:
- max_angle_diff:
-  x_high: 0.786
-  x_low: -0.786
-  y_high: 0.786
-  y_low: -0.786
- min_dist: 0.2
- max_dist: 10.0
- from_back: false
- joint_group: 'arm_with_head_group'
-level_gauge:
- max_angle_diff:
-  x_high: 0.175
-  x_low: -0.175
-  y_high: 0.349
-  y_low:  0.0
- min_dist: 0.4
- max_dist: 3.5
- from_back: false
- joint_group: 'arm_with_head_group'
-valve:
- max_angle_diff:
-  x_high: 0.786
-  x_low: -0.786
-  y_high: 0.786
-  y_low: -0.786
- min_dist: 0.4
- max_dist: 3.5
- from_back: true
- joint_group: 'arm_with_head_group'
-pipes:
- max_angle_diff:
-  x_high: 0.1
-  x_low: -0.1
-  y_high: 0.1
-  y_low: -0.1
- min_dist: 0.4
- max_dist: 1.0
- from_back: true
- joint_group: 'arm_with_head_group'
-victim:
- max_angle_diff:
-  x_high: 0.3
-  x_low: -0.3
-  y_high: 0.3
-  y_low: -0.3
- min_dist: 0.4
- max_dist: 1.0
- from_back: false
- joint_group: 'arm_with_head_group'
-unknown:
- max_angle_diff:
-  x_high: 1.571
-  x_low: -1.571
-  y_high: 1.571 
-  y_low: -1.571
- min_dist: 0.4
- max_dist: 10.0
- from_back: true
- joint_group: 'arm_with_head_group'
+# LIST object types parameters
+object_types:
+# hard coded in observation planner
+# - default:
+#   radius: 0.1
+#   angle_x_high: 1.571
+#   angle_x_low: -1.571
+#   angle_y_high: 1.571
+#   angle_y_low: -1.571
+#   dist_min: 0.25
+#   dist_max: 10.0
+#   from_back: true
+#   joint_group: 'arm_with_head_group'
+ - name: dial_gauge
+   radius: 0.1
+   angle_x_high: 0.471
+   angle_x_low: -0.471
+   angle_y_high: 0.471
+   angle_y_low: -0.175
+   dist_min: 0.4
+   dist_max: 3.5
+   from_back: false
+   joint_group: 'arm_with_head_group'
+ - name: hotspot
+   radius: 0.05
+   angle_x_high: 0.786
+   angle_x_low: -0.786
+   angle_y_high: 0.786
+   angle_y_low: -0.786
+   dist_min: 0.25
+   dist_max: 10.0
+   from_back: false
+   joint_group: 'arm_with_head_group'
+ - name: level_gauge
+   radius: 0.2
+   angle_x_high: 0.175
+   angle_x_low: -0.175
+   angle_y_high: 0.349
+   angle_y_low:  0.0
+   dist_min: 0.4
+   dist_max: 3.5
+   from_back: false
+   joint_group: 'arm_with_head_group'
+ - name: valve
+   radius: 0.15
+   angle_x_high: 0.786
+   angle_x_low: -0.786
+   angle_y_high: 0.786
+   angle_y_low: -0.786
+   dist_min: 0.75
+   dist_max: 2.0
+   from_back: true
+   joint_group: 'arm_with_head_group'
+ - name: chilitag
+   radius: 0.05
+   angle_x_high: 0.786
+   angle_x_low: -0.786
+   angle_y_high: 0.786
+   angle_y_low: -0.786
+   dist_min: 0.2
+   dist_max: 1.5
+   from_back: false
+   joint_group: 'arm_with_head_group'
+ - name: pipes
+   radius: 0.05
+   angle_x_high: 0.1
+   angle_x_low: -0.1
+   angle_y_high: 0.1
+   angle_y_low: -0.1
+   min_dist: 0.4
+   max_dist: 1.0
+   from_back: true
+   joint_group: 'arm_with_head_group'
+ - name: victim
+   radius: 0.05
+   angle_x_high: 0.3
+   angle_x_low: -0.3
+   angle_y_high: 0.3
+   angle_y_low: -0.3
+   min_dist: 0.4
+   max_dist: 1.0
+   from_back: false
+   joint_group: 'arm_with_head_group'
+# END LIST object types parameters
