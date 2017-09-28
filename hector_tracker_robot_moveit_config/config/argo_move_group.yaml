@@ -65,7 +65,7 @@ object_types:
    angle_x_low: -0.786
    angle_y_high: 0.786
    angle_y_low: -0.786
-   dist_min: 0.2
+   dist_min: 0.4
    dist_max: 1.5
    from_back: false
    joint_group: 'arm_with_head_group'
